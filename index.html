@@ -3,22 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>50project50days boilerplate</title>
+    <title>Random Choice picker</title>
   </head>
 
   <body>
-    <div>
-      <h1>50project50days</h1>
-      <h2>Project starter.</h2>
+    <div class="container">
+      <h3 data-aos="zoom-in-down">
+        Enter all of the choices divided by a comma (','). <br />
+        Press enter when you're done.
+      </h3>
+      <textarea
+        data-aos="zoom-in-up"
+        placeholder="Enter choices here..."
+        id="textarea"
+      ></textarea>
+
+      <div id="tags"></div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
